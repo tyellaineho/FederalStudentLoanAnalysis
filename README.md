@@ -7,7 +7,6 @@ To start, I will be doing an analysis of yearly student loan data found on Feder
 #### Yearly Student Loan Data Analysis
 This analysis takes into consideration 10 years of loan origination and disbursement data from all students utilizing federal financial. Part of the initial data analysis involved dropping unnecessary data rows, renaming and reorganizing data columns so that it is more compatible with a SQL database link, as well as appending columns to make aid year based distictions. Addiitonally, in exploring the dataset, I have found that there were some inconsistent school names that resulted from a 10 year data collection timeline, so a major part of the data cleaning also involved finding the correct school name to utilize in order to better represent a school's lending history.
 
-Once all of the data has been prepared, I created a SQLite link to create a table that includes year specific loan data.
+Once all of the data has been prepared, I created a SQLite link to create a table that includes year specific loan data. After creating the tables, I created a Python Flask application and Javascript to create application routes and visualizations. Finally, I utilized Bootstrap/HTML/CSS frameworks to create a website dashboard that visualizes student loan data over the past 10 years.
 
-
-To be continued...
+Although a dashboard is available for view at the moment, I will continue working on updating the dashboard to include more granular and in-depth analysis on student loans.
