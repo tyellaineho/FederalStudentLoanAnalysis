@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Federal Student Loans: A Decade in Review</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.0.4/chroma.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Quicksand|Bungee+Shade|Work+Sans&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="top-nav-bar">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="/"><img src="{{ url_for('static', filename='css/cat-eye-glasses.svg') }}"
+                    width="30" height="30" class="d-inline-block align-top" alt=""> <b>Federal Student Loans: A Decade
+                    in Review</b></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="/about">About Me<span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link active" href="/credits">Credits</a>
+                    <a class="nav-item nav-link active"
+                        href="https://www.github.com/tyellaineho/FederalStudentLoanAnalysis">GitHub</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="body-background">
+        <div class="container">
+            <div class="row">
+                <br>
+                <br>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="headline-header-number">
+                        Project Credits and Resources
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <br><br>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-mg-12 col-sm-12">
+                    <div class="about-me-shape">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="webiconimage">
+                                    <img src="{{ url_for('static', filename='css/good.svg') }}"
+                                        alt="credits"></div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="about-me-title">
+                                    <h1><strong>Resources</strong></h1>
+                                </div>
+                                <div class="about-me-text">
+                                    <h5>Data/Information Sources</h5>
+                                    <ul>
+                                        <li><a href="https://studentaid.gov/data-center">Federal Student Aid Data
+                                                Center</a></li>
+                                        <li><a href="https://studentaid.gov/">Federal Student Aid Informational
+                                                Website</a></li>
+                                    </ul>
+                                    <h5>Other Credits</h5>
+                                    <ul>
+                                        <li><a href="https://www.flaticon.com/">Flaticon: Vector Icons</a></li>
+                                        <li><a href="https://fontawesome.com/license">Font Awesome: Licensed Icons</a></li>
+                                        <li><a href="https://mycolor.space/gradient">ColorSpace: CSS Color Gradients</a></li>
+                                    </ul>
+                                    <h5>Languages, Tools and Frameworks</h5>
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-4 col-sm-12">
+                                            <ul>
+                                                <li>Python</li>
+                                                <li>Flask</li>
+                                                <li>Heroku</li>
+                                                <li>Pandas</li>
+                                                <li>Numpy</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-12">
+                                            <ul>
+                                                <li>SQLite</li>
+                                                <li>SQLAlchemy</li>
+                                                <li>Plotly/D3.JS</li>
+                                                <li>Bootstrap/HTML/CSS</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <h5>Connect with me:</h5>
+                                    <a href="https://www.linkedin.com/in/ellainetszyingho/"><img
+                                            src="{{ url_for('static', filename='css/linkedin-brands.svg') }}"
+                                            class="webicon" alt="linkedin"></a>
+                                    <a href="https://github.com/tyellaineho"><img
+                                            src="{{ url_for('static', filename='css/github-brands.svg') }}"
+                                            class="webicon" alt="linkedin"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <br>
+            </div>
+            <div class="row">
+                <br>
+            </div>
+            <div class="row">
+                <br>
+                <div class="col-lg-4 col-md-4 col-sm-4"></div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="button-text">
+                        <a href="/"><button type="button" class="btn btn-info btn-block">Return to Homepage</button></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4"></div>
+            </div>
+            <div class="row">
+                <br><br><br>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
