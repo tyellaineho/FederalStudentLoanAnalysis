@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Federal Student Loans: The Decade in Review</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.0.4/chroma.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Quicksand|Bungee+Shade|Work+Sans&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="top-nav-bar">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="/"><img src="{{ url_for('static', filename='css/cat-eye-glasses.svg') }}"
+                    width="30" height="30" class="d-inline-block align-top" alt=""> <b>Federal Student Loans: The Decade
+                    in
+                    Review</b></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="/about">About Me<span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link active" href="/credits">Credits</a>
+                    <a class="nav-item nav-link active"
+                        href="https://www.github.com/tyellaineho/FederalStudentLoanAnalysis">GitHub</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="body-background">
+        <div class="container">
+            <div class="row">
+                <br>
+                <br>
+            </div>
+            <!-- HEADLINE HEADER SECTION -->
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <br><br>
+                    <div class="headline-header">
+                        Federal Student Loans:
+                        <br>
+                        The Decade in Review
+                        <br>
+                    </div>
+                    <div class="headline-header-number">
+                        2010 - 2019
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="body-text">
+                        <h6>Created by Ellaine Tsz Ying Ho</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- CARD DECK SECTION -->
+            <div class="row">
+                <br>
+                <div class="card-deck">
+                    <div class="card bg-light mb-3">
+                        <img src="{{ url_for('static', filename='css/cat-eye-glasses.svg') }}" class="card-img-top"
+                            alt="About me icon">
+                        <div class="card-body">
+                            <h5 class="card-title">About Me</h5>
+                            <p class="card-text">Thanks for visiting my Federal Student Loans project analysis site! My
+                                name is Ellaine and you can learn more about my professional work here.</p>
+                            <p><a href="/about" class="btn btn-outline-dark" role="button">Click Here!</a></p>
+                            <p class="card-text"><small class="text-muted">Icons made by <a
+                                        href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from
+                                    <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></small>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card bg-light mb-3">
+                        <img src="{{ url_for('static', filename='css/good.svg') }}" class="card-img-top"
+                            alt="Project Credits Icon">
+                        <div class="card-body">
+                            <h5 class="card-title">Project Credits</h5>
+                            <p class="card-text">Please visit this page for all resources and credits regarding this
+                                project site. Everything on this site including datasets and icons are openly sourced.
+                            </p>
+                            <p><a href="/credits" class="btn btn-outline-dark" role="button">Click Here!</a></p>
+                            <p class="card-text"><small class="text-muted">Icons made by <a
+                                        href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from
+                                    <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></small>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card bg-light mb-3">
+                        <img src="{{ url_for('static', filename='css/github.svg') }}" class="card-img-top"
+                            alt="github repo">
+                        <div class="card-body">
+                            <h5 class="card-title">Github Repository</h5>
+                            <p class="card-text">Please visit here for my Github repository for this analysis project.
+                                This includes all datasets used, as well as any code and database links.</p>
+                            <p><a href="https://www.github.com/tyellaineho/FederalStudentLoanAnalysis"
+                                    class="btn btn-outline-dark" role="button">Click Here!</a></p>
+                            <p class="card-text"><small class="text-muted">Icons made by <a
+                                        href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from
+                                    <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+            </div>
+            <div class="row">
+            </div>
+            <!-- INTRO SECTION -->
+            <div class="row">
+                <div class="body-title">
+                    <h3><strong>What are federal student loans and who uses them?</strong></h3>
+                </div>
+                <div class="col-lg-8 col-md-6 col-sm-12">
+                    <div class="body-text">
+                        <p>Originally used to promote and enable access to higher education, government-backed student
+                            loan programs were first created in 1958 under the <a
+                                href="https://history.house.gov/HouseRecord/Detail/15032436195">National Defense
+                                Education Act (NDEA)</a>. As
+                            history progressed and more efforts are made to encourage education as the way for upward
+                            economic and social
+                            mobility, the <a href="https://en.wikipedia.org/wiki/Higher_Education_Act_of_1965">Higher
+                                Education Act of 1965</a> further extended student loans programs. Since then,
+                            student loans have been an increasingly large part of U.S. higher education and have
+                            evolved to be one of
+                            the major sources of financial assistance to students who are seeking postsecondary
+                            education.</p>
+                        <p>In present day, students may apply for federal student loan aid through the <a href="https://www.studentaid.gov">Free Application
+                            for Federal Student Aid (FAFSA)</a>. Depending on each student's educational plans (ex: undergraduate
+                            or
+                            professional student), various grants and loan programs are offered as forms of financial
+                            assistance. This project will exclusively analyze the state of student
+                            loan programs within the past decade.</p>
+                        <p>It is important to recognize that federal student loan programs are made available through
+                            the
+                            government, and extension and limitation of such programs are based on presidential and
+                            congressional agendas. The <a href="https://www.ed.gov/">U.S. Department of Education</a>
+                            oversees the administration and
+                            regulations of federal student aid programs, and make these programs accessible for schools
+                            to participate in.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+                    <img src="{{ url_for('static', filename='css/tax.svg') }}" id="body-image" alt="loansgovt">
+                    <p><small class="body-text">Icon credited to Freepick from <a
+                                href="https://www.flaticon.com">Flaticon</a></small></p>
+                </div>
+            </div>
+            <!-- FIRST BAR CHART SECTION -->
+            <div class="row">
+                <div class="body-title">
+                    <h3><strong>Federal Student Loan School Trends: Decreasing Numbers</strong></h3>
+                    <br>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-8">
+                    <div class="div-charts" id="schoolCountBarChart"></div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 my-auto">
+                    <div class="body-text">
+                        <h5>
+                            <p>
+                                Data shows that there has been an overall decrease in institutional participation
+                                between
+                                2010
+                                to 2019 in federal student loan programs. In 2011 to 2012, the number of institutions
+                                participating in loan
+                                programs peaked at 5661. By 2019, there were 5162 institutions
+                                participating, which accounts for a 9% decrease in school participation numbers.</p>
+                            <p></p>
+                        </h5>
+                    </div>
+                </div>
+                <br>
+            </div>
+            <div class="row">
+                <div class="body-title">
+                    <br>
+                    <h3><strong>What types of institutions participate in the federal student loan programs?</strong>
+                    </h3>
+                    <br>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="body-text">
+                        <p>
+                            Federal student loan programs are made available to both foreign and domestic institutions,
+                            given these institutions meet certain program eligibility criteria. By submitting an
+                            Electronic Application for Approval to
+                            Participate (E-APP) in the Federal Student Financial Aid Programs, schools can apply to be
+                            considered eligible to award and disburse various types of federal student aid funding, such
+                            as loans, grants, and other federal aid programs.</p>
+                        <p>
+                            Each year, schools must also submit a Fiscal Operations Report and Application to
+                            Participate
+                            (FISAP) to document their expenditures and disbursement data in order to renew their
+                            application to participate in such programs.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 text-center">
+                    <div class="body-text">
+                        <img src="{{ url_for('static', filename='css/publicu.svg') }}" height="200px" width="200px"
+                            alt="public school">
+                        <p><small class="body-text">Icons made by <a href="https://www.flaticon.com/authors/smashicons"
+                                    title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/"
+                                    title="Flaticon">www.flaticon.com</a></small></p>
+                        <h5>Public</h5>
+                        <p>Public schools are mostly funded by the public from the federal and state government, and
+                            typically have lower tuition rates than their private school counterparts.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 text-center">
+                    <div class="body-text">
+                        <img src="{{ url_for('static', filename='css/campus.svg') }}" height="200px" width="200px"
+                            alt="private school">
+                        <p><small class="body-text">Icons made by <a href="https://www.flaticon.com/authors/freepik"
+                                    title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"
+                                    title="Flaticon">www.flaticon.com</a></small></p>
+                        <h5>Private</h5>
+                        <p>Private schools are not operated by the government, but are private institutions which may
+                            receive
+                            federal funding and are non-profit organizations.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 text-center">
+                    <div class="body-text">
+                        <img src="{{ url_for('static', filename='css/investor.svg') }}" height="200px" width="200px"
+                            alt="proprietary">
+                        <p><small class="body-text">Icons made by <a href="https://www.flaticon.com/authors/eucalyp"
+                                    title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/"
+                                    title="Flaticon">www.flaticon.com</a></small></p>
+                        <h5>Proprietary</h5>
+                        <p>Proprietary schools are also known as for-profit colleges and can be owned by investors or
+                            independent owners. An example might be a career college.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="body-title">
+                    <br>
+                    <h3><strong>Federal Student Loan Trends: Proportion of Institutional Participation</strong></h3>
+                    <br>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 my-auto">
+                    <div class="body-text">
+                        <h5>
+                            <p>
+                                From 2010 to 2019, data shows that there is a small pattern emerging in the proportion
+                                of school participation. While there wasn't a major proportional change in participation
+                                in school participation, data shows that there has been a steady decrease in the
+                                proportion of proprietary, for-profit institutions participating in federal student loan
+                                programs.</p>
+                            <p>
+                                Not surprisingly, domestic schools account for over 90% of institutional participation,
+                                and participation in federal student loan programs is not common in foreign
+                                institutions.
+                            </p>
+                        </h5>
+                    </div>
+                </div>
+                <div class="col-col-lg-8 col-md-8 col-sm-8">
+                    <div class="div-charts" id="schoolPercBarChart"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <br>
+                    <div class="body-title">
+                        <h3><strong>School Participation Count: A Year by Year Review</strong></h3>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="body-text">
+                        <div class="text-center">
+                            <h5>Select a school type from the dropdown list to retrieve data regarding school
+                                participation from 2010-2019.
+                            </h5>
+                            <select id="selLineSchoolCount" onchange="lineOptionChanged(this.value)"></select>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="div-charts" id="line-graph"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="body-text">
+                        <br>
+                        <h5>
+                            <p>
+                                Data over the past decade shows that there has been steady decreases in participation
+                                across most institutional categories, except for foreign proprietary schools.
+                            </p>
+                            <p>
+                                The largest school count decrease was in the proprietary school category. Reviewing the
+                                numbers of proprietary
+                                institutions, proprietary school counts decreased from 2078 to 1703, which accounts for
+                                an 18% decrease. While
+                                it may be hard to attribute the exact reason why proprietary school participation
+                                have decreased over the decade, some <a
+                                    href="https://www.theatlantic.com/education/archive/2015/02/the-downfall-of-for-profit-colleges/385810/">articles</a>
+                                have mentioned an increasing governmental effort to curb federal aid exploitation from
+                                proprietary institutions. Additionally, federal regulations surrounding debt to career
+                                outcomes ratio such as the <a
+                                    href="https://studentaid.gov/data-center/school/ge">Gainful Employment</a> rule aims
+                                to prevent schools from misusing federal loan funds.
+                            </p>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="body-title">
+                    <h3><strong>What types of federal student loans are there?</strong></h3>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+                    <img src="{{ url_for('static', filename='css/scholarship.svg') }}" id="body-image"
+                        alt="budget for edu">
+                    <p><small class="body-text">Icons made by <a href="https://www.flaticon.com/authors/monkik"
+                                title="monkik">monkik</a> from <a href="https://www.flaticon.com/"
+                                title="Flaticon">www.flaticon.com</a></small></p>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-12">
+                    <div class="body-text">
+                        <p>
+                            As students and parents explore different aid options for postsecondary education,
+                            affordability and outcomes are at the forefront of discussion. Along with that discussion,
+                            federal student loans are also an important part to the college application and decision
+                            making process.
+                        </p>
+                        <p>
+                            These are the types of student loans available through the Federal Student Loan programs:
+                        </p>
+                        <ul>
+                            <li><strong>Subsidized Loans</strong>: typically made available to undergraduate students
+                                with financial need. A major benefit to this type of loan is that interest accruals are
+                                deferred when students are at school.</li>
+                            <li><strong>Unsubsidized Loans</strong>: available to both undergraduate and graduate
+                                students and have an annual and lifetime borrowing limit.</li>
+                            <li><strong>PLUS Loans</strong>: available under Parent PLUS and Graduate PLUS, as a federal
+                                loan aid supplement for applicants who are approved based on a credit check.</li>
+                        </ul>
+                        <p>Note that as of July 2012, subsidized loans are no longer available to graduate students, and
+                            students are only eligible to borrow under unsubsidized and PLUS loan funds.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="body-title">
+                    <h3><strong>How has federal student loan debt evolved over the past decade?</strong></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="body-text">
+                        <p>
+                            <h5>From changes in federal regulations to discussions of <a
+                                    href="https://www.forbes.com/sites/camilomaldonado/2018/07/24/price-of-college-increasing-almost-8-times-faster-than-wages/#2f5bd1cc66c1">skyrocketing
+                                    education costs</a>, the student loan landscape has evolved significantly over the
+                                past decade.</h5>
+                        </p>
+                        <p>
+                            <h5>Data from the past decade indicates that the number of loan recipients and amount of
+                                loans disbursed at the undergraduate level has decreased. The average debt per student
+                                has remained constant, partly due to federally yearly loan maximums.</h5>
+                        </p>
+                        <p>
+                            <h5>
+                                Loans at the graduate level, such as the Graduate Unsubsidized and PLUS loans have
+                                increased incrementally over the years. After subsidized loans have been phased out at
+                                the
+                                graduate level, students had to rely more on the Unsubsidized and PLUS loans to keep up
+                                with
+                                tuition and living costs, which has also increased over the past decade. Additionally,
+                                Parent
+                                PLUS loans have increased about $4,000 on average across different schools.</h5>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+                    <div class="body-text">
+                        <h5>Click on each of the aid years below to view how student loans have changed over the past
+                            decade.</h5>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="button-text">
+                        <button type="button" class="btn btn-info"
+                            onclick="javascript:updateBubble(1011);">2010-2011</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="button-text"><button type="button" class="btn btn-info"
+                            onclick="javascript:updateBubble(1112);">2011-2012</button></div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="button-text"><button type="button" class="btn btn-info"
+                            onclick="javascript:updateBubble(1213);">2012-2013</button></div>
+                </div>
+            </div>
+            <div class="row">
+                <br>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="button-text"><button type="button" class="btn btn-info"
+                            onclick="javascript:updateBubble(1314);">2013-2014</button></div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="button-text"><button type="button" class="btn btn-info"
+                            onclick="javascript:updateBubble(1415);">2014-2015</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="button-text"><button type="button" class="btn btn-info"
+                            onclick="javascript:updateBubble(1516);">2015-2016</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <br>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="button-text"><button type="button" class="btn btn-info"
+                            onclick="javascript:updateBubble(1617);">2016-2017</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="button-text"><button type="button" class="btn btn-info"
+                            onclick="javascript:updateBubble(1718);">2017-2018</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="button-text"><button type="button" class="btn btn-info"
+                            onclick="javascript:updateBubble(1819);">2018-2019</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="body-text">
+                        <br><br>
+                        <div class="div-charts" id="bubble-graph"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <br>
+            </div>
+            <div class="row">
+                <div class="body-title">
+                    <h3><strong>Interactive Exploration Tool for School Specific Loan Data in the U.S</strong></h3>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="body-text">
+                        <p><h5>The following dashboard will allow you to view federal student loan data such as average
+                            loan debt, disbursements, and recipient data from a specific school.</h5></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+                    <div class="body-text">
+                        <h5>Select a school from the dropdown list to view loan recipient and disbursement data for the
+                            school.</h5>
+                        <p>The school list is organized based on OPEID school code identifiers. To look up a specific
+                            school's OPEID, please visit the Department of Education's Database of Accredited
+                            Postsecondary Institutions and Programs (DAPIP) <a
+                                href="https://ope.ed.gov/dapip/#/home">here.</a>
+                        </p>
+                        <select id="select_school" onchange="schoolOptionChanged(this.value)"></select>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="body-text">
+                        <br>
+                        <div class="div-charts" id="dot-plot"></div>
+                        Note regarding loan recipient data plot:
+                        <ul>
+                            <li>The plot will show 0 dollars for average and total disbursements for selected loans in
+                                specific schools if the award is not applicable to that student population (ex: graduate
+                                schools) or year.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="button-text"><button type="button" class="btn btn-info"
+                            onclick="javascript:loanTypeOptionChanged('Direct Subsidized');">Direct
+                            Subsidized</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="button-text"><button type="button" class="btn btn-info"
+                            onclick="javascript:loanTypeOptionChanged('Direct Unsubsidized');">Direct
+                            Unsubsidized</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="button-text"><button type="button" class="btn btn-info"
+                            onclick="javascript:loanTypeOptionChanged('Graduate Unsubsidized');">Graduate
+                            Unsubsidized</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <br>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="button-text"><button type="button" class="btn btn-info"
+                            onclick="javascript:loanTypeOptionChanged('Parent PLUS');">Parent PLUS</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="button-text"><button type="button" class="btn btn-info"
+                            onclick="javascript:loanTypeOptionChanged('Graduate PLUS');">Graduate PLUS</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="button-text"><button type="button" class="btn btn-info"
+                            onclick="javascript:loanTypeOptionChanged('Graduate Subsidized');">Graduate
+                            Subsidized</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="body-text">
+                        <br>
+                        <div class="div-charts" id="school-line-graph"></div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="body-text">
+                        <br>
+                        <div class="div-charts" id="school-bar-chart"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="body-text">
+                    Notes regarding disbursement and loan average plots:
+                    <ul>
+                        <li>The plot will show 0 dollars for average and total disbursements for selected loans in
+                            specific schools if the award is not applicable to that student population (ex: graduate
+                            schools) or year.</li>
+                        <li>The plot does not take schools that have closed over the years into consideration and will
+                            show 0 as the default value.</li>
+                </div>
+            </div>
+            <div class="row">
+                <br>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+                    <div class="body-title">
+                        <h6>Project created by Ellaine Tsz Ying Ho in January 2020</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <script src="https://cdn.plot.ly/plotly-1.31.2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+
+</html>
